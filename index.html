@@ -575,7 +575,8 @@
     aspect-ratio: 4/3; overflow: hidden; position: relative;
   }
   .doc-photo img {
-    width: 100%; height: 100%; object-fit: cover;
+    width: 100%; height: 100%; object-fit: contain;
+    background: var(--white);
     object-position: center top;
     transition: transform 0.45s;
   }
@@ -652,7 +653,8 @@
     background: var(--navy-deep);
   }
   .gallery-item img {
-    width: 100%; height: 100%; object-fit: cover;
+    width: 100%; height: 100%; object-fit: contain;
+    background: var(--navy-deep);
     transition: transform 0.45s, opacity 0.3s;
   }
   .gallery-item-overlay {
